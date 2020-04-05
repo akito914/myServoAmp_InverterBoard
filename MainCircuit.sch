@@ -1,0 +1,309 @@
+EESchema Schematic File Version 4
+LIBS:InverterBoard-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GNDPWR #PWR041
+U 1 1 5E54DA0F
+P 1500 4750
+F 0 "#PWR041" H 1500 4550 50  0001 C CNN
+F 1 "GNDPWR" H 1504 4596 50  0000 C CNN
+F 2 "" H 1500 4700 50  0001 C CNN
+F 3 "" H 1500 4700 50  0001 C CNN
+	1    1500 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDC #PWR040
+U 1 1 5E558087
+P 1500 1250
+F 0 "#PWR040" H 1500 1150 50  0001 C CNN
+F 1 "VDC" H 1500 1525 50  0000 C CNN
+F 2 "" H 1500 1250 50  0001 C CNN
+F 3 "" H 1500 1250 50  0001 C CNN
+	1    1500 1250
+	1    0    0    -1  
+$EndComp
+Connection ~ 5000 3750
+$Comp
+L Device:D_AAK D10
+U 1 1 5E551DD0
+P 3000 2500
+F 0 "D10" V 2954 2579 50  0000 L CNN
+F 1 "TPMR10D" V 3045 2579 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-277A" H 3000 2500 50  0001 C CNN
+F 3 "~" H 3000 2500 50  0001 C CNN
+	1    3000 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 2750 5000 3000
+Connection ~ 5000 2750
+Connection ~ 5000 3000
+Wire Wire Line
+	5500 3000 5000 3000
+Text HLabel 5500 3000 2    50   Output ~ 0
+U_OUT
+Wire Wire Line
+	5000 3700 5000 3750
+Wire Wire Line
+	4500 3500 4700 3500
+Text HLabel 4500 3500 0    50   Input ~ 0
+GATE_UN
+Wire Wire Line
+	5000 2700 5000 2750
+Wire Wire Line
+	4700 2500 4500 2500
+Text HLabel 4500 2500 0    50   Input ~ 0
+GATE_UP
+$Comp
+L Device:Q_NMOS_GDS Q3
+U 1 1 5E54A435
+P 4900 3500
+F 0 "Q3" H 5106 3546 50  0000 L CNN
+F 1 "IPA60R280P7S" H 5106 3455 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220F-3_Horizontal_TabUp" H 5100 3600 50  0001 C CNN
+F 3 "~" H 4900 3500 50  0001 C CNN
+	1    4900 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q2
+U 1 1 5E54780C
+P 4900 2500
+F 0 "Q2" H 5106 2546 50  0000 L CNN
+F 1 "IPA60R280P7S" H 5106 2455 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220F-3_Horizontal_TabUp" H 5100 2600 50  0001 C CNN
+F 3 "~" H 4900 2500 50  0001 C CNN
+	1    4900 2500
+	1    0    0    -1  
+$EndComp
+Connection ~ 7500 3750
+Wire Wire Line
+	7500 2750 7500 3000
+Connection ~ 7500 2750
+Connection ~ 7500 3000
+Wire Wire Line
+	8000 3000 7500 3000
+Wire Wire Line
+	7500 3700 7500 3750
+Wire Wire Line
+	7000 3500 7200 3500
+Text HLabel 7000 3500 0    50   Input ~ 0
+GATE_VN
+Wire Wire Line
+	7500 2700 7500 2750
+Wire Wire Line
+	7200 2500 7000 2500
+Text HLabel 7000 2500 0    50   Input ~ 0
+GATE_VP
+$Comp
+L Device:Q_NMOS_GDS Q5
+U 1 1 5E55EEC3
+P 7400 3500
+F 0 "Q5" H 7606 3546 50  0000 L CNN
+F 1 "IPA60R280P7S" H 7606 3455 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220F-3_Horizontal_TabUp" H 7600 3600 50  0001 C CNN
+F 3 "~" H 7400 3500 50  0001 C CNN
+	1    7400 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q4
+U 1 1 5E55EEC9
+P 7400 2500
+F 0 "Q4" H 7606 2546 50  0000 L CNN
+F 1 "IPA60R280P7S" H 7606 2455 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220F-3_Horizontal_TabUp" H 7600 2600 50  0001 C CNN
+F 3 "~" H 7400 2500 50  0001 C CNN
+	1    7400 2500
+	1    0    0    -1  
+$EndComp
+Connection ~ 10000 3750
+Wire Wire Line
+	10000 2750 10000 3000
+Connection ~ 10000 2750
+Connection ~ 10000 3000
+Wire Wire Line
+	10500 3000 10000 3000
+Text HLabel 10500 3000 2    50   Output ~ 0
+W_OUT
+Wire Wire Line
+	10000 3700 10000 3750
+Wire Wire Line
+	9500 3500 9700 3500
+Text HLabel 9500 3500 0    50   Input ~ 0
+GATE_WN
+Wire Wire Line
+	10000 2700 10000 2750
+Wire Wire Line
+	9700 2500 9500 2500
+Text HLabel 9500 2500 0    50   Input ~ 0
+GATE_WP
+$Comp
+L Device:Q_NMOS_GDS Q7
+U 1 1 5E5654E3
+P 9900 3500
+F 0 "Q7" H 10106 3546 50  0000 L CNN
+F 1 "IPA60R280P7S" H 10106 3455 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220F-3_Horizontal_TabUp" H 10100 3600 50  0001 C CNN
+F 3 "~" H 9900 3500 50  0001 C CNN
+	1    9900 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q6
+U 1 1 5E5654E9
+P 9900 2500
+F 0 "Q6" H 10106 2546 50  0000 L CNN
+F 1 "IPA60R280P7S" H 10106 2455 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220F-3_Horizontal_TabUp" H 10100 2600 50  0001 C CNN
+F 3 "~" H 9900 2500 50  0001 C CNN
+	1    9900 2500
+	1    0    0    -1  
+$EndComp
+Text HLabel 4500 2750 0    50   UnSpc ~ 0
+SOURCE_UP
+Wire Wire Line
+	4500 2750 5000 2750
+Text HLabel 4500 3750 0    50   UnSpc ~ 0
+SOURCE_UN
+Wire Wire Line
+	4500 3750 5000 3750
+Text HLabel 7000 2750 0    50   UnSpc ~ 0
+SOURCE_VP
+Wire Wire Line
+	7000 2750 7500 2750
+Text HLabel 9500 2750 0    50   UnSpc ~ 0
+SOURCE_WP
+Wire Wire Line
+	9500 2750 10000 2750
+Text HLabel 7000 3750 0    50   UnSpc ~ 0
+SOURCE_VN
+Wire Wire Line
+	7000 3750 7500 3750
+Text HLabel 9500 3750 0    50   UnSpc ~ 0
+SOURCE_WN
+Wire Wire Line
+	9500 3750 10000 3750
+Wire Wire Line
+	1500 1250 1500 1500
+Wire Wire Line
+	1500 4500 1500 4750
+$Comp
+L Device:Q_NMOS_GDS Q1
+U 1 1 5E8199C2
+P 2900 3500
+F 0 "Q1" H 3106 3546 50  0000 L CNN
+F 1 "IPA60R280P7S" H 3106 3455 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220F-3_Horizontal_TabUp" H 3100 3600 50  0001 C CNN
+F 3 "~" H 2900 3500 50  0001 C CNN
+	1    2900 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 3700 3000 3750
+Text HLabel 2700 3500 0    50   Input ~ 0
+GATE_BR
+Text HLabel 3300 2800 2    50   Output ~ 0
+BR_L
+Text HLabel 3300 2250 2    50   Output ~ 0
+BR_H
+Text HLabel 2700 3750 0    50   UnSpc ~ 0
+SOURCE_BR
+Wire Wire Line
+	2700 3750 3000 3750
+Connection ~ 3000 3750
+Wire Wire Line
+	3000 3750 3000 4500
+Wire Wire Line
+	3000 1500 3000 2250
+Wire Wire Line
+	3300 2250 3000 2250
+Connection ~ 3000 2250
+Wire Wire Line
+	3000 2250 3000 2350
+Wire Wire Line
+	3300 2800 3100 2800
+Connection ~ 5000 1500
+Connection ~ 7500 1500
+Wire Wire Line
+	7500 1500 10000 1500
+Wire Wire Line
+	7500 4500 10000 4500
+Wire Wire Line
+	5000 1500 7500 1500
+Connection ~ 3000 1500
+Wire Wire Line
+	3000 1500 5000 1500
+Connection ~ 3000 4500
+Wire Wire Line
+	3000 4500 5000 4500
+Wire Wire Line
+	1500 1500 3000 1500
+Wire Wire Line
+	1500 4500 3000 4500
+Wire Wire Line
+	10000 3000 10000 3300
+Text HLabel 8000 3000 2    50   Output ~ 0
+V_OUT
+Wire Wire Line
+	7500 3000 7500 3300
+Wire Wire Line
+	5000 3000 5000 3300
+Connection ~ 7500 4500
+Connection ~ 5000 4500
+Wire Wire Line
+	5000 4500 7500 4500
+Wire Wire Line
+	10000 1500 10000 2300
+Wire Wire Line
+	10000 3750 10000 4500
+Wire Wire Line
+	7500 3750 7500 4500
+Wire Wire Line
+	7500 1500 7500 2300
+$Comp
+L Device:C C15
+U 1 1 5E8028FD
+P 1500 3000
+F 0 "C15" H 1615 3046 50  0000 L CNN
+F 1 "1u" H 1615 2955 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L13.0mm_W6.0mm_P10.00mm_FKS3_FKP3_MKS4" H 1538 2850 50  0001 C CNN
+F 3 "~" H 1500 3000 50  0001 C CNN
+	1    1500 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 3150 1500 4500
+Connection ~ 1500 4500
+Wire Wire Line
+	1500 2850 1500 1500
+Connection ~ 1500 1500
+Wire Wire Line
+	5000 3750 5000 4500
+Wire Wire Line
+	5000 1500 5000 2300
+Connection ~ 3000 2800
+Wire Wire Line
+	3000 2800 3000 3300
+Wire Wire Line
+	3000 2700 3000 2800
+Wire Wire Line
+	3100 2700 3100 2800
+Connection ~ 3100 2800
+Wire Wire Line
+	3100 2800 3000 2800
+$EndSCHEMATC

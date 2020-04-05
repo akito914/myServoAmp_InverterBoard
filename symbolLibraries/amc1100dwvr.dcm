@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AMC1100DWVR
+D Precision Isolation Amplifer, Bandwidth 100kHz, SSIC-8
+K Isolation Amplifer
+F http://www.ti.com/lit/ds/symlink/amc1100.pdf
+$ENDCMP
+#
+#End Doc Library

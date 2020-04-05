@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name tlp152)(type Legacy)(uri ${KIPRJMOD}/symbolLibraries/tlp152.lib)(options "")(descr ""))
+  (lib (name amc1100dwvr)(type Legacy)(uri ${KIPRJMOD}/symbolLibraries/amc1100dwvr.lib)(options "")(descr ""))
+)
