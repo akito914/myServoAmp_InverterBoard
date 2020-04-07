@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 121)
+    (drawings 119)
     (tracks 769)
     (zones 0)
     (modules 107)
@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 1)
+    (last_trace_width 0.25)
     (user_trace_width 0.15)
     (user_trace_width 0.2)
     (user_trace_width 0.5)
@@ -4846,12 +4846,6 @@
     (arrow1b (pts (xy 44.45 45.72) (xy 43.323496 45.133579)))
     (arrow2a (pts (xy 0 45.72) (xy 1.126504 46.306421)))
     (arrow2b (pts (xy 0 45.72) (xy 1.126504 45.133579)))
-  )
-  (gr_text "TODO: Fix connection from motor line to current sensor." (at 327.66 -109.22) (layer Dwgs.User) (tstamp 5E8B7358)
-    (effects (font (size 10 10) (thickness 1.5)))
-  )
-  (gr_text "TODO: Fix via at current sensor." (at 232.41 -128.905) (layer Dwgs.User)
-    (effects (font (size 10 10) (thickness 1.5)))
   )
   (gr_line (start -27.94 20.32) (end 11.43 20.32) (layer Dwgs.User) (width 0.15))
   (gr_line (start -27.94 22.86) (end 12.7 22.86) (layer Dwgs.User) (width 0.15) (tstamp 5E8BE63C))
