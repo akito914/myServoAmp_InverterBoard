@@ -145,7 +145,7 @@ U 1 1 5E971A81
 P 1950 1950
 F 0 "J1" H 2000 2567 50  0000 C CNN
 F 1 "PinHeader" H 2000 2476 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 1950 1950 50  0001 C CNN
+F 2 "Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical" H 1950 1950 50  0001 C CNN
 F 3 "~" H 1950 1950 50  0001 C CNN
 	1    1950 1950
 	1    0    0    -1  
@@ -505,7 +505,7 @@ Power
 Wire Notes Line
 	500  3000 11000 3000
 Wire Notes Line
-	4000 500  4000 7500
+	4000 500  4000 7750
 Text Notes 4200 3300 0    100  ~ 0
 Main Construction
 Text Notes 650  850  0    100  ~ 0
@@ -953,4 +953,111 @@ Wire Wire Line
 Connection ~ 8450 1600
 Wire Wire Line
 	8450 1600 8700 1600
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5EC8C062
+P 9150 1600
+F 0 "TP5" V 9104 1788 50  0000 L CNN
+F 1 "TestPoint" V 9195 1788 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9350 1600 50  0001 C CNN
+F 3 "~" H 9350 1600 50  0001 C CNN
+	1    9150 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5EC8D069
+P 7650 1450
+F 0 "TP4" H 7708 1568 50  0000 L CNN
+F 1 "TestPoint" H 7708 1477 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm_LowProfile" H 7850 1450 50  0001 C CNN
+F 3 "~" H 7850 1450 50  0001 C CNN
+	1    7650 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 1450 7650 1600
+Connection ~ 7650 1600
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5EC90D0F
+P 6250 1100
+F 0 "TP2" H 6308 1218 50  0000 L CNN
+F 1 "TestPoint" H 6308 1127 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm_LowProfile" H 6450 1100 50  0001 C CNN
+F 3 "~" H 6450 1100 50  0001 C CNN
+	1    6250 1100
+	1    0    0    -1  
+$EndComp
+Connection ~ 6250 1100
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5EC9341A
+P 6250 1950
+F 0 "TP3" H 6192 1976 50  0000 R CNN
+F 1 "TestPoint" H 6192 2067 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm_LowProfile" H 6450 1950 50  0001 C CNN
+F 3 "~" H 6450 1950 50  0001 C CNN
+	1    6250 1950
+	-1   0    0    1   
+$EndComp
+Connection ~ 6250 1950
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5EC94939
+P 5250 1100
+F 0 "TP1" H 5000 1300 50  0000 L CNN
+F 1 "TestPoint" H 4850 1200 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm_LowProfile" H 5450 1100 50  0001 C CNN
+F 3 "~" H 5450 1100 50  0001 C CNN
+	1    5250 1100
+	1    0    0    -1  
+$EndComp
+Connection ~ 5250 1100
+Wire Notes Line
+	4000 6000 500  6000
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5EDAC4AF
+P 1000 6500
+F 0 "H1" H 1100 6546 50  0000 L CNN
+F 1 "MountingHole" H 1100 6455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1000 6500 50  0001 C CNN
+F 3 "~" H 1000 6500 50  0001 C CNN
+	1    1000 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5EDACABF
+P 2000 6500
+F 0 "H3" H 2100 6546 50  0000 L CNN
+F 1 "MountingHole" H 2100 6455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2000 6500 50  0001 C CNN
+F 3 "~" H 2000 6500 50  0001 C CNN
+	1    2000 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5EDACF52
+P 1000 7000
+F 0 "H2" H 1100 7046 50  0000 L CNN
+F 1 "MountingHole" H 1100 6955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1000 7000 50  0001 C CNN
+F 3 "~" H 1000 7000 50  0001 C CNN
+	1    1000 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5EDAD313
+P 2000 7000
+F 0 "H4" H 2100 7046 50  0000 L CNN
+F 1 "MountingHole" H 2100 6955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2000 7000 50  0001 C CNN
+F 3 "~" H 2000 7000 50  0001 C CNN
+	1    2000 7000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

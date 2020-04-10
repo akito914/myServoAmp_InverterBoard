@@ -521,8 +521,8 @@ U 1 1 5E89631E
 P 7500 4300
 AR Path="/5E844691/5E89631E" Ref="R?"  Part="1" 
 AR Path="/5E7F6C5B/5E89631E" Ref="R40"  Part="1" 
-F 0 "R40" V 7304 4300 50  0000 C CNN
-F 1 "100R" V 7395 4300 50  0000 C CNN
+F 0 "R40" V 7600 4300 50  0000 C CNN
+F 1 "100R" V 7700 4300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 7500 4300 50  0001 C CNN
 F 3 "~" H 7500 4300 50  0001 C CNN
 	1    7500 4300
@@ -992,4 +992,107 @@ F 3 "~" H 2500 3500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Connection ~ 2500 3500
+$Comp
+L Connector:TestPoint TP19
+U 1 1 5ECA6E64
+P 3000 2250
+F 0 "TP19" H 3058 2368 50  0000 L CNN
+F 1 "TestPoint" H 3058 2277 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3200 2250 50  0001 C CNN
+F 3 "~" H 3200 2250 50  0001 C CNN
+	1    3000 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2250 3000 2350
+$Comp
+L Connector:TestPoint TP21
+U 1 1 5ECAA221
+P 4750 2900
+F 0 "TP21" H 4808 3018 50  0000 L CNN
+F 1 "TestPoint" H 4808 2927 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4950 2900 50  0001 C CNN
+F 3 "~" H 4950 2900 50  0001 C CNN
+	1    4750 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 2900 4750 3000
+$Comp
+L Connector:TestPoint TP20
+U 1 1 5ECAD965
+P 3000 5250
+F 0 "TP20" H 3058 5368 50  0000 L CNN
+F 1 "TestPoint" H 3058 5277 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3200 5250 50  0001 C CNN
+F 3 "~" H 3200 5250 50  0001 C CNN
+	1    3000 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 5250 3000 5350
+$Comp
+L Connector:TestPoint TP22
+U 1 1 5ECB1410
+P 4750 5400
+F 0 "TP22" H 4808 5518 50  0000 L CNN
+F 1 "TestPoint" H 4808 5427 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4950 5400 50  0001 C CNN
+F 3 "~" H 4950 5400 50  0001 C CNN
+	1    4750 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 5400 4750 5500
+$Comp
+L Connector:TestPoint TP25
+U 1 1 5ECB50EF
+P 9800 4200
+F 0 "TP25" H 9858 4318 50  0000 L CNN
+F 1 "TestPoint" H 9858 4227 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10000 4200 50  0001 C CNN
+F 3 "~" H 10000 4200 50  0001 C CNN
+	1    9800 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 4200 9800 4300
+$Comp
+L Connector:TestPoint TP26
+U 1 1 5ECB8C1D
+P 9800 4800
+F 0 "TP26" H 9742 4826 50  0000 R CNN
+F 1 "TestPoint" H 9742 4917 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10000 4800 50  0001 C CNN
+F 3 "~" H 10000 4800 50  0001 C CNN
+	1    9800 4800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9800 4800 9800 4700
+$Comp
+L Connector:TestPoint TP23
+U 1 1 5ECBD092
+P 7750 4200
+F 0 "TP23" H 7500 4400 50  0000 L CNN
+F 1 "TestPoint" H 7350 4300 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7950 4200 50  0001 C CNN
+F 3 "~" H 7950 4200 50  0001 C CNN
+	1    7750 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 4200 7750 4300
+$Comp
+L Connector:TestPoint TP24
+U 1 1 5ED3D113
+P 7750 4950
+F 0 "TP24" H 7950 5000 50  0000 R CNN
+F 1 "TestPoint" H 8150 5100 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm_LowProfile" H 7950 4950 50  0001 C CNN
+F 3 "~" H 7950 4950 50  0001 C CNN
+	1    7750 4950
+	-1   0    0    1   
+$EndComp
+Connection ~ 7750 4950
 $EndSCHEMATC

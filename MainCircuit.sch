@@ -68,28 +68,6 @@ Wire Wire Line
 	4700 2500 4500 2500
 Text HLabel 4500 2500 0    50   Input ~ 0
 GATE_UP
-$Comp
-L Device:Q_NMOS_GDS Q3
-U 1 1 5E54A435
-P 4900 3500
-F 0 "Q3" H 5106 3546 50  0000 L CNN
-F 1 "IPA60R280P7S" H 5106 3455 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220F-3_Horizontal_TabUp" H 5100 3600 50  0001 C CNN
-F 3 "~" H 4900 3500 50  0001 C CNN
-	1    4900 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Q_NMOS_GDS Q2
-U 1 1 5E54780C
-P 4900 2500
-F 0 "Q2" H 5106 2546 50  0000 L CNN
-F 1 "IPA60R280P7S" H 5106 2455 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220F-3_Horizontal_TabUp" H 5100 2600 50  0001 C CNN
-F 3 "~" H 4900 2500 50  0001 C CNN
-	1    4900 2500
-	1    0    0    -1  
-$EndComp
 Connection ~ 7500 3750
 Wire Wire Line
 	7500 2750 7500 3000
@@ -163,17 +141,6 @@ F 3 "~" H 9900 3500 50  0001 C CNN
 	1    9900 3500
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Q_NMOS_GDS Q6
-U 1 1 5E5654E9
-P 9900 2500
-F 0 "Q6" H 10106 2546 50  0000 L CNN
-F 1 "IPA60R280P7S" H 10106 2455 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220F-3_Horizontal_TabUp" H 10100 2600 50  0001 C CNN
-F 3 "~" H 9900 2500 50  0001 C CNN
-	1    9900 2500
-	1    0    0    -1  
-$EndComp
 Text HLabel 4500 2750 0    50   UnSpc ~ 0
 SOURCE_UP
 Wire Wire Line
@@ -215,7 +182,7 @@ F 3 "~" H 2900 3500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3000 3700 3000 3750
-Text HLabel 2700 3500 0    50   Input ~ 0
+Text HLabel 2600 3500 0    50   Input ~ 0
 GATE_BR
 Text HLabel 3300 2800 2    50   Output ~ 0
 BR_L
@@ -306,4 +273,105 @@ Wire Wire Line
 Connection ~ 3100 2800
 Wire Wire Line
 	3100 2800 3000 2800
+$Comp
+L Connector:TestPoint TP15
+U 1 1 5EC4052F
+P 3000 2800
+F 0 "TP15" V 3050 3150 50  0000 C CNN
+F 1 "TestPoint" V 2950 3150 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm_LowProfile" H 3200 2800 50  0001 C CNN
+F 3 "~" H 3200 2800 50  0001 C CNN
+	1    3000 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2600 3500 2700 3500
+$Comp
+L Connector:TestPoint TP16
+U 1 1 5EC56992
+P 5000 3000
+F 0 "TP16" V 5050 3350 50  0000 C CNN
+F 1 "TestPoint" V 4950 3350 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm_LowProfile" H 5200 3000 50  0001 C CNN
+F 3 "~" H 5200 3000 50  0001 C CNN
+	1    5000 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP17
+U 1 1 5EC56E24
+P 7500 3000
+F 0 "TP17" V 7550 3350 50  0000 C CNN
+F 1 "TestPoint" V 7450 3350 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm_LowProfile" H 7700 3000 50  0001 C CNN
+F 3 "~" H 7700 3000 50  0001 C CNN
+	1    7500 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP18
+U 1 1 5EC573C6
+P 10000 3000
+F 0 "TP18" V 10050 3350 50  0000 C CNN
+F 1 "TestPoint" V 9950 3350 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm_LowProfile" H 10200 3000 50  0001 C CNN
+F 3 "~" H 10200 3000 50  0001 C CNN
+	1    10000 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP13
+U 1 1 5EC58D8C
+P 1500 1500
+F 0 "TP13" V 1550 1850 50  0000 C CNN
+F 1 "TestPoint" V 1450 1850 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm_LowProfile" H 1700 1500 50  0001 C CNN
+F 3 "~" H 1700 1500 50  0001 C CNN
+	1    1500 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP14
+U 1 1 5EC596C8
+P 1500 4500
+F 0 "TP14" V 1550 4850 50  0000 C CNN
+F 1 "TestPoint" V 1450 4850 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm_LowProfile" H 1700 4500 50  0001 C CNN
+F 3 "~" H 1700 4500 50  0001 C CNN
+	1    1500 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q3
+U 1 1 5E54A435
+P 4900 3500
+F 0 "Q3" H 5106 3546 50  0000 L CNN
+F 1 "IPA60R280P7S" H 5106 3455 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220F-3_Horizontal_TabUp" H 5100 3600 50  0001 C CNN
+F 3 "~" H 4900 3500 50  0001 C CNN
+	1    4900 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q2
+U 1 1 5E54780C
+P 4900 2500
+F 0 "Q2" H 5106 2546 50  0000 L CNN
+F 1 "IPA60R280P7S" H 5106 2455 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220F-3_Horizontal_TabUp" H 5100 2600 50  0001 C CNN
+F 3 "~" H 4900 2500 50  0001 C CNN
+	1    4900 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q6
+U 1 1 5E5654E9
+P 9900 2500
+F 0 "Q6" H 10106 2546 50  0000 L CNN
+F 1 "IPA60R280P7S" H 10106 2455 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220F-3_Horizontal_TabUp" H 10100 2600 50  0001 C CNN
+F 3 "~" H 9900 2500 50  0001 C CNN
+	1    9900 2500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
